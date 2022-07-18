@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        div img {
+            width: 200px;
+            /* 
+            transition-property: width;
+            transition-duration: 0.3s;
+            transition-delay: 0s;
+            transition-timing-function: cubic-bezier(.74, .29, .39, 1.2); 
+            */
+            transition: width 0.3s 0s cubic-bezier(.74, .29, .39, 1.2);
+        }
+
+        div img:hover {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="imgs/sample1.jpg" alt="">
+    </div>
+</body>
+
+</html>

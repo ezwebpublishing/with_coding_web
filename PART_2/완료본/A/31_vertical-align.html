@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verical-align</title>
+    <style>
+        h2 span{
+            color:#fff;
+            background:#3498db;             
+        }
+        h2 span:first-child{
+            font-size:25px; 
+        }
+        h2 span:last-child{
+            font-size: 12px;                     
+        }
+        .line{
+            border:1px solid #000;
+        }
+.base{vertical-align: baseline;}
+.sub{vertical-align: sub;}
+.super{vertical-align: super;}
+.top{vertical-align: top;}
+.text-top{vertical-align: text-top;}
+.middle{vertical-align: middle;}
+.bottom{vertical-align: bottom;}
+.text-bottom{vertical-align: text-bottom;}
+.pixel{vertical-align: 20px;}
+
+.line img{vertical-align:top;}
+</style>
+</head>
+
+<body>
+    <h1>Vertical align</h1>
+    <h2><span>vertical-align</span> <span class="base">baseline</span></h2>
+    <h2><span>vertical-align</span> <span class="sub">sub</span></h2>
+    <h2><span>vertical-align</span> <span class="super">super</span></h2>
+    <h2><span>vertical-align</span> <span class="top">top</span></h2>
+    <h2><span>vertical-align</span> <span class="text-top">text-top</span></h2>
+    <h2><span>vertical-align</span> <span class="middle">middle</span></h2>
+    <h2><span>vertical-align</span> <span class="bottom">bottom</span></h2>
+    <h2><span>vertical-align</span> <span class="text-bottom">text-bottom</span></h2>
+    <h2><span>vertical-align</span> <span class="pixel">pixel</span></h2>
+
+    <p class="line">
+        <img src="http://placehold.it/200x200" alt="">
+    </p>
+</body>
+
+</html>

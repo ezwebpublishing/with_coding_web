@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+.parent{
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+    position:relative;
+    z-index:1;
+}
+.siblings{
+    width: 200px;
+    height: 100px;
+    background: green;
+    position:relative;
+    top:-50px;
+    left:50px;
+    z-index:0;
+}
+        div[class^="child"]{
+            width: 100px;
+            height: 100px;
+            border:1px solid;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .child1{
+            background: blue;
+            position:absolute;
+            left: 25px;
+            top: 75px;
+            z-index:10;
+        }
+        .child2{
+            background: red;
+            position:absolute;
+            left:0;
+            top:0;
+            z-index:5;
+        }
+        .child3{
+            background: #fff;
+            z-index:20;   
+            position:relative; 
+
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1">child 1</div>
+        <div class="child2">child 2</div>
+    </div>
+    <div class="siblings">
+        <div class="child3">child 3</div>
+    </div>
+</body>
+</html>

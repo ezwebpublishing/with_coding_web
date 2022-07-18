@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>테이블 태그</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>테이블 태그</h1>
+    <table>
+        <caption>
+            <h2>테이블 제목</h2>
+            <p>테이블 설명을 기술합니다.</p>
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">구분</th>
+                <th scope="col">제목 1</th>
+                <th scope="col">제목 2</th>
+                <th scope="col">제목 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>data11</td>
+                <td colspan="2">data12</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>data21</td>
+                <td rowspan="3">data22</td>
+                <td>data23</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>data31</td>                
+                <td>data33</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>data41</td>                
+                <td>data43</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">합계</th>
+                <td>total1</td>
+                <td>total2</td>
+                <td>total3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+</body>
+
+</html>

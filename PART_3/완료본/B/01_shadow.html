@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+    <style>
+
+.text{
+    text-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+.box{
+    width: 200px;
+    border:1px solid #ccc;
+    box-shadow:inset 5px 5px rgba(0,0,0,.1);
+}
+input{
+    outline:none;    
+    border:1px solid #ccc;
+}
+input:focus{
+    box-shadow:inset 0 0 3px rgba(0,0,255,.5);
+}
+
+.modal{
+    width:300px;
+    height:100px;
+    border:1px solid #ccc;
+    background:#fff;
+    position:fixed;
+    left:50%; 
+    top:50%;
+    margin-left:-150px;
+    margin-top:-50px;
+    box-shadow:3px 3px 5px rgba(0,0,0,.3);
+}
+
+    </style>
+</head>
+<body>
+    <h1>shadow</h1>
+    <h2 class="text">text-shadow</h2>
+    <h2 class="box">box-shadow</h2>
+    <hr>
+    <input type="text">
+    <hr>
+    <div class="modal">modal content</div>
+</body>
+</html>

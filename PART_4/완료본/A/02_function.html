@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>function - javascript Basic</title>
+</head>
+
+<body>
+    <h1>함수</h1>
+    <script>
+        function send() {
+            alert('경고');
+        }
+        send();
+    </script>
+    <hr>
+    <h2>함수의 구조</h2>
+    <script>
+        let sum;
+        
+        add(10, 30);
+
+        function add(a, b) {
+            sum = a + b; //
+        }        
+
+        document.write(sum);
+    </script>
+    <hr>
+    <h3>익명함수</h3>
+    <script>
+        document.write(sum(10,20));
+
+        let sum = function(x,y){
+            let z = x+y;
+            return z;
+        }  
+
+    </script>
+    <h3>즉시 실행 함수</h3>
+    <script>
+        let result = (function(a, b) {
+            return a + b;
+        })(10, 20);
+        document.write(result);
+    </script>
+</body>
+
+</html>

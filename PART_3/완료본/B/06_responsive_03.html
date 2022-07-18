@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive exercise2</title>
+    <!-- <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+
+        /* 기존 PC 구간 스타일 */
+
+        header {
+            background: #ebebeb;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            float: left;
+        }
+
+        header h1 a {
+            line-height: 60px;
+            text-decoration: none;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        header nav ul li {
+            float: left;
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            line-height: 60px;
+        }
+
+        /* 반응형 */
+        @media screen and (max-width:960px) {
+            .container {
+                width: 100%;
+                padding: 0 15px;
+                box-sizing: border-box;
+            }
+        }
+
+        @media screen and (max-width:640px) {
+
+            header h1,
+            header nav {
+                float: none;
+                text-align: center;
+            }
+
+            header nav ul {
+                display: inline-block;
+            }
+
+            header nav ul li {
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container clearfix">
+            <h1><a href="#">Logo</a></h1>
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Member Join</a></li>
+                    <li><a href="#">Site map</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>

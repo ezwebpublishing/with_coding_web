@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loop</title>
+</head>
+
+<body>
+    <h1>Loop</h1>
+    <script>
+        let i = 0;
+        document.write(i + '<br>');
+        let i = i + 2;
+        document.write(i + '<br>');
+        let i = i + 2;
+        document.write(i + '<br>');
+        let i = i + 2;
+        document.write(i + '<br>');
+        let i = i + 2;
+        document.write(i + '<br>');
+        let i = i + 2;
+        document.write(i + '<br>');
+    </script>
+    <hr>
+    <h2>for 반복문</h2>
+    <script>
+        for (let i = 0; i <= 10; i += 2) {
+            document.write(i + '<br>');
+        }
+    </script>
+    <h2>while 반복문</h2>
+    <script>
+        let i = 0;
+        while (i <= 10) {
+            document.write(i + '<br>');
+            i += 2;
+        }
+    </script>
+    <h2>do while 반복문</h2>
+    <script>
+        let i = 0;
+        do {
+            document.write(i + '<br>');
+            i += 2;
+        } while (i <= 10);
+    </script>
+    <h2>forEach 반복문</h2>
+    <script>
+        let arr = ['a', 'b', 'c', 'd', 'e'];
+        arr.forEach(function (item, index, all) {
+            document.write(item + '는 전체 배열 ' + all + '에서 ' + index + '번째 값입니다' + '<br>');
+        });
+    </script>
+    <h2>for in 반복문</h2>
+    <script>
+        let student = {
+            eng: 80,
+            kor: 100,
+            math: 95
+        }
+        for (item in student) {
+            document.write(item + ':' + student[item] + '<br/>');
+        }
+    </script>
+    <h2>for of 반복문</h2>
+    <script>
+        let arr = ['a', 'b', 'c', 'd', 'e'];
+        for (item of arr) {
+            document.write(item + '<br/>');
+        }
+    </script>
+
+</body>
+
+</html>

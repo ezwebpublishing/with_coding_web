@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+</head>
+
+<body>
+    <h1>ECMAScript 6</h1>
+    <h2>Template Literal</h2>
+    <script>
+        let str1 = 'jascript';
+        let str2 = '기초';
+        //var msg = '여러분은 지금 ' + str1 + str2 + '를 학습하고 있습니다';
+        let msg = `여러분은 지금 ${str1 + str2}를 학습하고 있습니다`;
+        document.write(msg);
+    </script>
+    <h2>var vs. let</h2>
+    <script>
+        var a = 0;
+        if (true) {
+            var a = 2;
+            console.log(a);
+        }
+        console.log(a);
+    </script>
+    <hr>
+    <script>
+        let b = 0;
+        if (true) {
+            let b = 2;
+            console.log(b);
+        }
+        console.log(b);
+    </script>
+    <h2>const</h2>
+    <script>
+        let c = 100;
+        c = 200;
+        console.log(c);
+
+        const d = 100;
+        //d = 200; 재할당 불가
+        console.log(d);
+    </script>
+    <hr>
+    <h2>const 변수 값의 수정</h2>
+    <script>
+        const student = {
+            eng: 90,
+            kor: 100
+        }
+        student.eng = 80;
+        console.log(student.eng);
+        const backends = ['asp', 'jsp', 'php'];
+        backends.pop();
+        console.log(backends);
+    </script>
+    <h2>const 변수 재할당</h2>
+    <script>
+        // const student = {
+        //     math: 80
+        // } 재할당 불가
+    </script>
+    <h2>Arrow function 화살표 함수</h2>
+    <script>
+        (function () {
+            console.log('즉시 실행 함수 실행됨');
+            //이름이 없는 즉시 실행 함수
+        })()
+    </script>
+    <hr>
+    <script>
+        (() => {
+            console.log('즉시 실행 함수 실행됨');
+            //이름이 없는 즉시 실행 함수
+        })()
+    </script>
+    <hr>
+    <script>
+        function add(a, b) {
+            return a + b;
+        }
+
+        document.write(add(10, 20));
+    </script>
+    <hr>
+    <script>
+        //ES6
+        let add = (a, b) => {
+            return a + b;
+        }
+        document.write(add(20, 30));
+    </script>
+    <hr>
+    <script>
+        let add2 = (x, y) => x + y;
+
+        document.write(add2(30, 30));
+    </script>
+    <hr>
+    <script>
+        //1 기존 문법
+        function multiply(x) {
+            return x * 2;
+        }
+        document.write(multiply(5));
+        document.write('<hr>');
+
+        //2 매개변수가 하나일 때는 괄호 생략 가능
+        let multiply = x => {
+            return x * 2;
+        }
+        document.write(multiply(5));
+        document.write('<hr>');
+
+        //3 함수내에서 바로 리턴만 있을 때 중괄호 생략 가능
+        let multiply = x => x * 2;
+        document.write(multiply(10));
+    </script>
+    <h2>Spread Operator 전개 연산자</h2>
+    <script>
+        let array1 = ['one', 'two'];
+        let array2 = ['three', 'four'];
+        let combined = [array1[0], array1[1], array2[0], array2[1]]; //1번 방법
+        let combined = array1.concat(array2); //2번 방법
+        let combined = [].concat(array1, array2); //3번 방법
+    </script>
+    <hr>
+    <script>
+        // ES6 문법
+        let array1 = ['one', 'two'];
+        let array2 = ['three', 'four'];
+        const combined = [...array1, ...array2]; // 전개연산자로 합치기 
+    </script>
+    <hr>
+    <script>
+        let objectOne = {
+            one: 1,
+            two: 2,
+            other: 0
+        };
+        let objectTwo = {
+            three: 3,
+            four: 4,
+            other: -1
+        };
+
+        // ES5 예제
+        var combined = {
+            one: objectOne.one,
+            two: objectOne.two,
+            three: objectTwo.three,
+            four: objectTwo.four,
+        };
+
+        // ES6 예제
+        var combined = {
+            ...objectOne,
+            ...objectTwo,
+        };
+    </script>
+</body>
+
+</html>

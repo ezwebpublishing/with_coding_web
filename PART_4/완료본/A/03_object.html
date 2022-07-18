@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Object</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+    <script>
+        /*
+        let s1 = {}; //빈 객체 생성
+        s1.kor = 100;
+        s1.eng = 90;
+        s1.math = 80;
+        */
+        let s1 = {
+            kor: 100,
+            eng: 90,
+            math: 80,
+            total: function () {
+                let sum = this.kor + this.eng + this.math;
+                return sum;
+            }
+        }
+        document.write(s1.total());
+    </script>
+</body>
+
+</html>

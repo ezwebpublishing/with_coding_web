@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        figure {
+            text-align: center;
+            margin: 5rem auto;
+        }
+
+        img {
+            transition: 0.4s;
+        }
+
+        .translate {
+            perspective: 1000px;
+            perspective-origin: 0 0;
+        }
+
+        .translate:hover img {
+            /* 
+    transform:translateX(50px)
+    transform:translateY(-50px);     
+    transform:translate(50px, -50px);    
+    transform: translateZ(100px);
+    */
+            transform: translate3d(50px, 50px, 100px);
+        }
+
+        .scale img {
+            transform-origin: 0 100%;
+            transform: perspective(500px) scaleZ(1) translateZ(100px);
+        }
+
+        .scale:hover img {
+            /* transform: scale(1.5); */
+            transform: perspective(500px) scaleZ(2) translateZ(100px);
+        }
+
+        .rotate:hover img {
+            transform: perspective(500px) rotateY(45deg);
+        }
+
+        .skew:hover img {
+            transform: skewY(20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transform</h1>
+    <h2>translate</h2>
+    <figure class="translate">
+        <img src="imgs/sample1.jpg">
+        <figcaption>
+            photo description
+        </figcaption>
+    </figure>
+    <hr>
+    <h2>scale</h2>
+    <figure class="scale">
+        <img src="imgs/sample1.jpg">
+        <figcaption>
+            photo description
+        </figcaption>
+    </figure>
+    <hr>
+    <h2>rotate</h2>
+    <figure class="rotate">
+        <img src="imgs/sample1.jpg">
+        <figcaption>
+            photo description
+        </figcaption>
+    </figure>
+    <hr>
+    <h2>skew</h2>
+    <figure class="skew">
+        <img src="imgs/sample1.jpg">
+        <figcaption>
+            photo description
+        </figcaption>
+    </figure>
+
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Question - A01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 
+        헤더의 배경색은 #ccc, 
+        container의 너비는 960px 화면 가운데, 
+        로고는 왼쪽, 메뉴는 오른쪽으로 배치하시오. 
+        메뉴의 간격을 20px, 
+        로고와 메뉴안의 링크들은 세로 높이 60px안에서 세로 기준으로 가운데 있도록 합니다.
+        */
+
+        header {
+            background: #ccc;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            float: left;
+            line-height: 60px;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        header nav ul li {
+            float: left;
+            line-height: 60px;
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .container:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1><a href="#">Logo</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Member Join</a></li>
+                    <li><a href="#">Site map</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+</body>
+
+</html>

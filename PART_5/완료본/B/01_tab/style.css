@@ -1,0 +1,21 @@
+.tab-wrapper { width:960px; margin:auto;}
+.tab-menu {padding-left:0; position: relative; z-index:1; display:flex; gap:20px;}
+.tab-menu li {list-style:none; }
+.tab-menu li a{ color:#999; text-transform:uppercase; font-weight:bold;line-height:27px; text-decoration:none; padding:0 20px; display: block;}
+#tab-content {min-height: 300px;}
+
+.tab-menu li a.active{
+	color: #fff;
+}
+.nav {
+	position: relative;
+}
+.highlight{
+	position: absolute;
+	width: 98px;
+	top:0;
+	left:0;
+	bottom:0;
+	background:#000;
+	transition:0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}

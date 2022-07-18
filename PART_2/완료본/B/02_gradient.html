@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            margin: 2rem auto;
+        }
+
+        .linear {
+            background: linear-gradient(to right, #3498db 20%, #fff 20%, #fff 80%, #3498db 80%);
+        }
+
+.radial {
+    height:200px;
+    background:radial-gradient(circle farthest-corner at 50px 50px, #3498db 0%, #fff 100%);
+}
+    </style>
+</head>
+
+<body>
+    <h1>Gradient</h1>
+    <div class="box linear">linear gradient</div>
+    <div class="box radial">Radial gradient</div>
+</body>
+
+</html>

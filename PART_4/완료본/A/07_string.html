@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>String</title>
+</head>
+
+<body>
+    <h1>String</h1>
+    <h2>chartAt</h2>
+    <script>
+        let str = 'hello world';
+        document.write(str.charAt(4));
+    </script>
+
+    <h2>IndexOf, Search</h2>
+    <script>
+        let str = 'hello world';
+        document.write(str.indexOf('world'), str.search('worlds'));
+    </script>
+
+    <h2>concat</h2>
+    <script>
+        let str = 'hello world';
+        let str2 = 'welcome universe';
+        let str3 = str.concat(str2);
+        document.write(str3);
+    </script>
+
+    <h2>replace</h2>
+    <script>
+        let str = 'hello world';
+        let str2 = 'welcome universe';
+        let str3 = str2.replace('welcome', 'bye');
+        document.write(str2 + '<br>');
+        document.write(str3 + '<br>');
+    </script>
+
+    <h2>slice</h2>
+    <script>
+        let str = 'hello world';
+        let str4 = str.slice(0, 5);
+        document.write(str + '<br>');
+        document.write(str4 + '<br>');
+    </script>
+
+    <h2>split</h2>
+    <script>
+        let org = 'html/css/javascript';
+        let new1 = org.split('/');
+        document.write(new1);
+        console.log(org, new1);
+    </script>
+
+    <h2>length</h2>
+    <script>
+        let str = 'hello world';
+        document.write(str.length);
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Math</title>
+</head>
+
+<body>
+    <h1>Math</h1>
+    <script>
+        console.log(Math.abs(-7.5));
+        console.log(Math.ceil(7.1));
+        console.log(Math.floor(7.6));
+        console.log(Math.round(7.6));
+    </script>
+    <hr>
+    <h2>Math.random</h2>
+    <script>
+        let randomNum = Math.random();
+        document.write(randomNum);
+    </script>
+    <h2>난수 생성하기</h2>
+    <script>
+        let ranNum = Math.random() * 10;
+        let ranNum2 = Math.floor(ranNum);
+        let ranNum3 = ranNum2 % 8;
+        document.write(ranNum3);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>Array</h1>
+    <script>
+        let frontLangs = [];
+        frontLangs[0] = 'HTML';
+        frontLangs[1] = 'CSS';
+        frontLangs[2] = 'Javascript';
+        document.write(frontLangs);
+    </script>
+    <hr>
+    <script>
+        let backLangs = ['php', 'asp', 'jsp'];
+        document.write(backLangs);
+    </script>
+    <hr>
+    <script>
+        document.write(frontLangs[1]);
+    </script>
+    <h2>length</h2>
+    <script>
+        document.write(frontLangs.length);
+    </script>
+    <h2>join</h2>
+    <script>
+        let fronts = frontLangs.join();
+        let fronts2 = frontLangs.join('-');
+        document.write(fronts + '<br>' + fronts2 + '<br>' + frontLangs);
+    </script>
+    <h2>reverse</h2>
+    <script>
+        let reverseLangs = frontLangs.reverse();
+        document.write(reverseLangs + '<br>' + frontLangs);
+    </script>
+    <h2>sort</h2>
+    <script>
+        let fruits = ['apple', 'orange', 'mango'];
+        let numbers = [10, 50, 20, 40];
+
+        /*
+        fruits.sort(); //apple,mango,orange
+        numbers.sort(); //10,20,40,50
+        
+        fruits.sort(function () {
+            return -1; //mango,orange,apple
+        });
+        numbers.sort(function () {
+            return -1; //40,20,50,10
+        });
+        */
+
+        fruits.sort(function (a, b) {
+            return b - a;
+        });
+        numbers.sort(function (a, b) {
+            return b - a;
+        });
+
+        document.write(fruits);
+        document.write(numbers);
+    </script>
+    <h2>push</h2>
+    <script>
+        fruits.push('grape');
+        document.write(fruits);
+    </script>
+    <h2>pop</h2>
+    <script>
+        fruits.pop();
+        document.write(fruits);
+    </script>
+    <h2>unshift</h2>
+    <script>
+        fruits.unshift('grape');
+        document.write(fruits);
+    </script>
+    <h2>shift</h2>
+    <script>
+        fruits.shift();
+        document.write(fruits);
+    </script>
+    <h2>slice</h2>
+    <script>
+        let orgArr = [0, 1, 2, 3, 4, 5];
+        let newArr = orgArr.slice(0, 3);
+        document.write(orgArr + ' | ' + newArr);
+    </script>
+    <h2>splice</h2>
+    <script>
+        let orgArr2 = [0, 1, 2, 3, 4, 5];
+        let newArr2 = orgArr2.splice(0, 3);
+        document.write(orgArr2 + ' | ' + newArr2);
+    </script>
+    <h2>concat</h2>
+    <script>
+        let arr1 = ['HTML', 'CSS', 'Javascript'];
+        let arr2 = ['php', 'asp', 'jsp'];
+        let arr3 = arr1.concat(arr2);
+
+        document.write(arr3 + ' / ' + arr1);
+    </script>
+    <h2>filter</h2>
+    <script>
+        let nums = [10, 7, 25, 22, 30];
+        let mynums = nums.filter(function (item) {
+            return item % 5 == 0;
+        });
+        document.write(mynums);
+    </script>
+</body>
+
+</html>

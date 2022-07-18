@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+    <style>
+        .wrap {
+            height: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column-reverse;
+            border: 1px solid #ccc;
+        }
+
+        .wrap div {
+            padding: 10px;
+        }
+
+        .wrap div:first-child {
+            background: red;
+        }
+
+        .wrap div:nth-child(2) {
+            background: blue;
+            color: #fff;
+        }
+
+        .wrap div:nth-child(3) {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </div>
+
+</body>
+
+</html>

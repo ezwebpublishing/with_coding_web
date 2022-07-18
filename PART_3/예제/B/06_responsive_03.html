@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive exercise2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        header {
+            background: #ebebeb;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            float: left;
+        }
+
+        header h1 a {
+            line-height: 60px;
+            text-decoration: none;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        header nav ul li {
+            float: left;
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            line-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container clearfix">
+            <h1><a href="#">Logo</a></h1>
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Member Join</a></li>
+                    <li><a href="#">Site map</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Style</title>
+    <style>
+        nav > ul > li {list-style-type: square;}
+        nav > ul > li > ul > li {list-style:none;}
+        nav li li li{list-style-type: decimal;}
+        ol li{list-style-type: '- ';}
+        .menu li{list-style-type: '\1F44D';}
+    </style>
+</head>
+<body>
+    <h1>list style</h1>
+    <nav>
+        <ul>
+            <li>menu</li>
+            <li>menu
+                <ul>
+                    <li>sub menu</li>
+                    <li>sub menu
+                        <ul>
+                            <li>sub menu2</li>
+                            <li>sub menu2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>menu</li>
+            <li>menu</li>
+        </ul>
+    </nav>
+    <hr>
+    <ol>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+    </ol>
+    <hr>
+    <ul class="menu">
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+    </ul>
+</body>
+</html>

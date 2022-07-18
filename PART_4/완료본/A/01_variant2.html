@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>산술 연산자 - 자바스크립트 기초</title>
+    <meta name="description" content="">
+    <meta name="author" content="user1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>연산자</h1>
+    <h2>산술 연산자</h2>
+    <script>
+        //+, -, *, /
+        let num1 = 100;
+        let num2 = 30;
+        console.log(num1 + num2); // 130
+        console.log(num1 - num2); // 70
+        console.log(num1 * num2); // 3000
+        console.log(num1 / num2); // 3.333333
+        console.log(num1 % num2); // 10
+    </script>
+    <h3>문자열 더하기</h3>
+    <script>
+        console.log(10 + 20);
+        console.log('문자' + 20);
+        console.log('10' + 20);
+        console.log(10 + '20');
+
+        console.log('10' * 20);
+        console.log(10 - '20');
+        console.log(10 / '20');
+    </script>
+    <h3>증감 연산자</h3>
+    <script>
+        let i = 1;
+        console.log(i++); //1
+        console.log(i); //2
+        let x = 1;
+        console.log(++x); //2
+        console.log(x); //2
+    </script>
+    <h3>복합대입연산자</h3>
+    <script>
+        let a = 10;
+        // a = a + 10;
+        a += 10;
+        console.log(a);
+    </script>
+
+
+</body>
+
+</html>

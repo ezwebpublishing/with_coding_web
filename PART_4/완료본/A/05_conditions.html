@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>conditions</title>
+</head>
+
+<body>
+    <h1>조건문</h1>
+<script>
+    var a = 10;
+    var b = 20;
+    if(a > b) {
+        document.write('a가 b보다 크다.');
+    } else{
+        document.write('a가 b보다 작다.');
+    }
+</script>
+<hr>
+<script>
+    var a = 10;
+    var b = 20;
+    if(a > b) {
+        document.write('a가 b보다 크다.');
+    } else if(a == b){
+        document.write('a가 b와 같다.');
+    } else{
+        document.write('a가 b보다 작다.');
+    }
+</script>
+<hr>
+<h2>비교연산자 != </h2>
+<script>
+    if(1 != '1') {
+        document.write('두 값은 같지 않다');
+    } else{
+        document.write('두 값은 같다');
+    }
+
+    document.write('<hr>');
+    
+    if(2 !== '2') {
+        document.write('두 값은 같지 않다');
+    } else{
+        document.write('두 값은 같다');
+    }    
+</script>
+<hr>
+<h2>타입 비교</h2>
+<script>
+    if(typeof 1 !== typeof '1'){        
+        document.write('두 값의 타입은 같지 않다');
+    } else{
+        document.write('두 값의 타입은 같다');
+    }
+    console.log(typeof(1), typeof('1'));
+</script>
+<hr>
+<h2>중첩 조건문</h2>
+<script>
+var a = 10;
+var b = 20;
+   
+if(a != b){
+    if(a > b){
+        document.write('a가 b보다 크다');
+    } else{
+        document.write('a가 b보다 작다');
+    }
+} else{
+    document.write('a가 b와 같다');  
+}
+</script>
+<h2>조건문의 축약</h2>
+<script>
+    
+    
+    if(a<b){
+        document.write('a가 b보다 작다');
+    } else {
+        document.write('a가 b보다 크다');
+    }
+
+    document.write('<hr>');
+
+    if(a<b)
+        document.write('a가 b보다 작다');
+    else
+        document.write('a가 b보다 크다');
+
+    document.write('<hr>');
+
+    (a<b)?
+    document.write('a가 b보다 작다'):    
+    document.write('a가 b보다 크다');
+
+</script>
+
+<h2>논리연산자</h2>
+<script>
+var a = 10;
+var b = 20;
+var c = 30;
+
+if(a < b && b < c){
+    document.write('두 조건이 모두 참이다.');
+} else{
+    document.write('두 조건 모두 거짓이다.');
+}
+
+document.write('<hr>');
+
+if(a < b || b < c){
+    document.write('두 조건중 하나는 참이다.');
+} else{
+    document.write('두 조건 모두 거짓이다.');
+}
+</script>
+
+<h2>switch</h2>
+<script>
+var number = prompt('숫자를 입력해주세요','0');
+
+switch(number %2){
+    case 0:
+        alert('짝수');
+        break;
+    case 1:
+        alert('홀수');
+        break;
+    default:
+        alert('숫자가 아니다');
+        break;
+}
+</script>
+</body>
+
+</html>

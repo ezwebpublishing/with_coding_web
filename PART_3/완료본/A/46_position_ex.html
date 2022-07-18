@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position exercise</title>
+    <style>
+.slidewrapper{
+    width: 600px;
+    height:400px;
+    margin:0 auto;
+    background:#ebebeb;
+    position: relative;
+}
+.btn{
+    padding:0 20px;
+    line-height: 50px;
+    color:#fff;
+    background: #000;
+    text-decoration: none;
+    display:inline-block;
+    position: absolute;
+    top:50%;
+    margin-top:-25px;
+}
+.prev{
+    right:calc(100% + 20px);
+}
+.next{
+    left:calc(100% + 20px);
+}
+    </style>
+</head>
+
+<body>
+    <h1>Position exercise</h1>
+    
+    <div class="slidewrapper">
+        <h2>slide contents</h2>        
+        <a href="" class="btn prev">PREV</a>
+        <a href="" class="btn next">NEXT</a>        
+    </div>
+
+</body>
+</html>

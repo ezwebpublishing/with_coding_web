@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float exercise1</title>
+    <style>
+        .portfolio_list {
+            width: 860px;
+            margin: 0 auto;
+            padding: 10px;
+            background: #ebebeb;
+        }
+
+        .portfolio_list li {
+            float: left;
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .portfolio_list li:last-child {
+            margin-right: 0;
+        }
+
+        .portfolio_list:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Portfolio List</h1>
+    <ul class="portfolio_list">
+        <li>
+            <img src="http://placehold.it/200x200" alt="">
+        </li>
+        <li>
+            <img src="http://placehold.it/200x200" alt="">
+        </li>
+        <li>
+            <img src="http://placehold.it/200x200" alt="">
+        </li>
+        <li>
+            <img src="http://placehold.it/200x200" alt="">
+        </li>
+    </ul>
+
+
+
+</body>
+
+</html>

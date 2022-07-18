@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box {
+            width: 500px;
+        }
+
+        .padding {
+            padding: 20px;
+        }
+
+        .border {
+            border: 10px solid #ccc;
+        }
+
+        .margin {
+            margin: 50px;
+        }
+
+        .content-box {
+            box-sizing: content-box;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <h2>content</h2>
+    <div class="box content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <div class="box padding">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <div class="box padding border">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <div class="box padding border margin">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <div class="box padding border margin bg">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <hr>
+    <div class="box padding border margin content-box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <div class="box padding border margin border-box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+
+
+</body>
+
+</html>

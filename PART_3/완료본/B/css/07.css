@@ -1,0 +1,56 @@
+*{
+    margin:0; padding:0;
+  }
+  img{
+    vertical-align: top;
+  }
+  li {list-style:none; width:400px;   margin-bottom: 30px; }
+  li figure{
+    position: relative;
+    overflow: hidden;
+  }
+  li figure:before{
+    content:'';
+    position: absolute;
+    left: 0;right: 0;bottom: 0;top: 0;
+    background: rgba(0,0,0,.8);
+    transform:translateX(100%);
+    transition:0.35s cubic-bezier(0.65, 0, 0.35, 1);;
+  }
+  li figure figcaption{
+    position: absolute;
+    left: 50%; top:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;  
+  }
+
+  li figure figcaption p{
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  li figure figcaption a{
+    padding: 5px 20px;
+    text-decoration: none;
+    border:1px solid rgba(255,255,255,.5);
+    color:#fff;
+  }
+ 
+  li figure figcaption > * {
+    opacity:0;
+    margin-left: 50px;    
+  }
+  li figure:hover figcaption > * {
+    animation:fadeLeftIn 0.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+ 
+
+
+  @keyframes fadeLeftIn{
+    from {opacity:0; margin-left:50px;}
+    to{opacity:1; margin-left:0;}
+  }
+  
+  li figure:hover:before{
+    transform:none;
+  }
+

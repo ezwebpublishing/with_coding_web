@@ -1,0 +1,48 @@
+*{
+    margin:0; padding:0;
+}
+li{
+    list-style: none;
+}
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background:#fff;
+    box-shadow:0 0 5px rgba(0,0,0,.25);
+    z-index:100;
+}
+body{
+    padding-top: 60px;
+}
+
+main{
+    padding: 2rem;
+}
+section{
+    margin:2rem 0;
+}
+section p{
+    margin:1rem 0;
+}
+aside{
+    background: rgba(0,0,0,.8);
+    padding: 5rem 1.5rem 0;
+    width: 250px;
+}
+aside h2 {
+    color:#fff;
+    margin-bottom: 1rem;
+}
+aside ul li {
+    margin-bottom:1rem;
+    border-bottom:1px solid #999;
+    padding-bottom:1rem;
+}
+aside a{
+    color:#fff;
+    text-decoration: none;
+}
+/* Aside Menu Animation */

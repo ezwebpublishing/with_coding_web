@@ -1,0 +1,10 @@
+*{
+    margin:0; padding:0;
+  }
+  img{
+    vertical-align: top;
+  }
+  li {list-style:none; width:400px;   margin-bottom: 30px; }
+  li figure{
+    position: relative;
+  }
