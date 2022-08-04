@@ -5,40 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>background size</title>
+    <title>background position</title>
     <style>
         .bg {
             width: 400px;
             height: 300px;
             background-image: url('img/bg.png');
             background-repeat: no-repeat;
+            background-position: 50px 50px;
             border: 1px solid;
-        }
-        .size1{
-            background-size: 200px;
-        }
-        .size2{
-            background-size: 100%;
-        }
-        .full{
-            background-size: 100% 100%;
-        }
-        .contain {
-            background-size: contain; /* 짧은 쪽을 100% */
-            background-position: center top;
-        }
-        .cover{
-            background-size:cover;
-            background-position: center top;
-        }
-        .fluid{
-            width: 50%;
+
         }
     </style>
 </head>
 
 <body>
-    <h1>background size</h1>
+    <h1>background position</h1>
 
     <div class="bg"></div>
 
