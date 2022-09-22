@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Base */
+html { 
+	font-size: 16px; 
+	line-height: 1.5; 
+}
+.wrapper { 
+	max-width: 960px; 
+	width:85%;
+	margin:0 auto; 
+}
+article{
+	margin: 4rem auto;
+}
+/* GOTOP BTN */
+#go-top {    
+	width: 48px; 
+	height: 48px;   
+	position: fixed; 
+	bottom: 48px; 
+	right: 48px;
+	line-height:48px;
+	text-align:center; 	
+	background-color:#444;
+	color:#fff;
+	opacity: 0;
+	visibility: hidden;
+	transition:opacity 0.5s;
+}
+
+#go-top.active{
+	opacity: 1;
+	visibility: visible;
+}
